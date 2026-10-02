@@ -1,7 +1,7 @@
 # Patrick Duggan · DugganUSA
 
 [![npm](https://img.shields.io/npm/v/dugganusa-cli?label=npm%20dugganusa-cli)](https://www.npmjs.com/package/dugganusa-cli)
-[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/DugganUSALLC.dugganusa-threat-intel?label=VS%20Code%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=DugganUSALLC.dugganusa-threat-intel)
+[![VS Code Marketplace](https://img.shields.io/badge/VS%20Code%20Marketplace-published-007ACC)](https://marketplace.visualstudio.com/items?itemName=DugganUSALLC.dugganusa-threat-intel)
 [![MCP Registry](https://img.shields.io/badge/MCP%20Registry-listed-blue)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pduggusa)
 [![IETF Hackathon](https://img.shields.io/badge/IETF%20Hackathon-contributor-lightgrey)](https://github.com/pduggusa/dugganusa-ietf)
 [![Free API](https://img.shields.io/badge/free%20API-get%20a%20key-brightgreen)](https://analytics.dugganusa.com/stix/register)
