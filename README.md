@@ -1,5 +1,11 @@
 # Patrick Duggan · DugganUSA
 
+[![npm](https://img.shields.io/npm/v/dugganusa-cli?label=npm%20dugganusa-cli)](https://www.npmjs.com/package/dugganusa-cli)
+[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/DugganUSALLC.dugganusa-threat-intel?label=VS%20Code%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=DugganUSALLC.dugganusa-threat-intel)
+[![MCP Registry](https://img.shields.io/badge/MCP%20Registry-listed-blue)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pduggusa)
+[![IETF Hackathon](https://img.shields.io/badge/IETF%20Hackathon-contributor-lightgrey)](https://github.com/pduggusa/dugganusa-ietf)
+[![Free API](https://img.shields.io/badge/free%20API-get%20a%20key-brightgreen)](https://analytics.dugganusa.com/stix/register)
+
 **Threat intelligence you can check.** I build and run [DugganUSA](https://www.dugganusa.com), a threat-intelligence platform built with AI as a working partner: 69M searchable documents across 70 indexes, 1.9M indicator records, a free STIX/TAXII/MISP feed, and research on MCP and AI-agent security. Every claim links to its source, confidence is capped at 95%, and mistakes are corrected in public.
 
 Before this: lead architect for Dell EMC's Azure Stack hybrid cloud, then cloud security architecture at Check Point and Palo Alto Networks.
@@ -8,6 +14,7 @@ Before this: lead architect for Dell EMC's Azure Stack hybrid cloud, then cloud 
 
 - **API key in 30 seconds:** [analytics.dugganusa.com/stix/register](https://analytics.dugganusa.com/stix/register)
 - **Feeds:** STIX 2.1 / TAXII 2.1 / MISP, CSV blocklists for firewalls and SIEMs
+- **CLI:** `npx dugganusa-cli` · **MCP server:** listed in the official MCP Registry as `io.github.pduggusa/dugganusa-threat-intel`
 
 ## Tools
 
