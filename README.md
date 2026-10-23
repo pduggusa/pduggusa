@@ -20,6 +20,20 @@ Keep the tools and vendors you already use. These sit beside them, read-only, an
 - **Before a pull request merges a new dependency or MCP server**, add [dugganusa-checks-action](https://github.com/pduggusa/dugganusa-checks-action) to the workflow. It runs without a key at anonymous limits.
 - **Before your agent obeys an instruction file**, run `npx github:pduggusa/dugganusa-agent-guard` in the repo to find hidden Unicode in CLAUDE.md, .cursorrules and AGENTS.md ([source](https://github.com/pduggusa/dugganusa-agent-guard)).
 
+### Support matrix
+
+What each check covers, and what it asks of you.
+
+| Check | Runs where | Covers | Needs a key? | What leaves your machine |
+|---|---|---|---|---|
+| `check-package` (MCP tool) | Your agent, via `https://analytics.dugganusa.com/api/v1/mcp` | npm, PyPI, RubyGems, GitHub Actions; exact version adds an OSV vulnerability check | No | The package name and version you ask about |
+| Dredd `check_mcp_server` (MCP tool) | Your agent, via `https://analytics.dugganusa.com/api/v1/dredd/mcp` | MCP servers, including their full npm/PyPI dependency graph | No | The server name you ask about |
+| [dugganusa-checks-action](https://github.com/pduggusa/dugganusa-checks-action) | GitHub Actions, on pull requests | package-lock, npm-shrinkwrap, requirements*.txt, pyproject, poetry.lock, Gemfile(.lock), MCP config files, workflow `uses:` lines | No (anonymous limits); a free key raises them | Package, server and action identities from the diff |
+| [dugganusa-agent-guard](https://github.com/pduggusa/dugganusa-agent-guard) | Locally or in CI, zero dependencies | Hidden Unicode in CLAUDE.md, .cursorrules, AGENTS.md and similar files | No | Nothing |
+| [dugganusa-cli](https://github.com/pduggusa/dugganusa-cli) | Terminal, CI, or as a local MCP server | IPs, domains, hashes, CVEs, and known-bad packages in lockfiles | Yes, a [free key](https://analytics.dugganusa.com/stix/register) | The indicators it extracts, never the file |
+
+All of them are read-only: they give a verdict and change nothing. Anything that could not be checked is reported as unknown, never as clean.
+
 Every verdict cites where it came from: OSV, abuse.ch, CISA, the researchers who found the thing, and our own hunting. If one is wrong, tell us and we will fix it in public.
 
 ## Use it free
