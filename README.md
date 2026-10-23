@@ -6,6 +6,8 @@
 [![IETF Hackathon](https://img.shields.io/badge/IETF%20Hackathon-contributor-lightgrey)](https://github.com/pduggusa/dugganusa-ietf)
 [![Free API](https://img.shields.io/badge/free%20API-get%20a%20key-brightgreen)](https://analytics.dugganusa.com/stix/register)
 
+Developer docs: https://docs.dugganusa.com (for AI: https://docs.dugganusa.com/llms.txt)
+
 **Threat intelligence you can check.** I build and run [DugganUSA](https://www.dugganusa.com), AI security you can check, built with AI as a working partner: the DugganUSA Feed (free STIX/TAXII/MISP, [live counts](https://analytics.dugganusa.com/api/v1/search/stats)), and research on MCP and AI-agent security. Every claim links to its source, confidence is capped at 95%, and mistakes are corrected in public.
 
 Before this: lead architect for Dell EMC's Azure Stack hybrid cloud, then cloud security architecture at Check Point and Palo Alto Networks.
