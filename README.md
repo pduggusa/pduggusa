@@ -10,6 +10,18 @@
 
 Before this: lead architect for Dell EMC's Azure Stack hybrid cloud, then cloud security architecture at Check Point and Palo Alto Networks.
 
+## For agent builders: add a second opinion in one line
+
+Keep the tools and vendors you already use. These sit beside them, read-only, and need no key, no signup and none of your data.
+
+- **Before your agent installs a package or calls an MCP server**, give it our checks. Claude Code:
+  `claude mcp add --transport http dugganusa https://analytics.dugganusa.com/api/v1/mcp`
+  Any other MCP client: point it at `https://analytics.dugganusa.com/api/v1/mcp`. The `check-package` tool answers allow, review or block for npm, PyPI, RubyGems and GitHub Actions, with the reason and the source.
+- **Before a pull request merges a new dependency or MCP server**, add [dugganusa-checks-action](https://github.com/pduggusa/dugganusa-checks-action) to the workflow. It runs without a key at anonymous limits.
+- **Before your agent obeys an instruction file**, run `npx github:pduggusa/dugganusa-agent-guard` in the repo to find hidden Unicode in CLAUDE.md, .cursorrules and AGENTS.md ([source](https://github.com/pduggusa/dugganusa-agent-guard)).
+
+Every verdict cites where it came from: OSV, abuse.ch, CISA, the researchers who found the thing, and our own hunting. If one is wrong, tell us and we will fix it in public.
+
 ## Use it free
 
 - **API key in 30 seconds:** [analytics.dugganusa.com/stix/register](https://analytics.dugganusa.com/stix/register)
